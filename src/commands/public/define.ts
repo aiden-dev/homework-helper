@@ -1,6 +1,6 @@
 import { Command } from "discord-akairo";
 import { Message, MessageEmbed } from "discord.js";
-const fetch = require("node-fetch");
+import fetch from "node-fetch";
 
 export default class Define extends Command {
     public constructor() {
@@ -49,24 +49,20 @@ export default class Define extends Command {
           }else{
 
                 if(data.results.length >= index) {
-
                     embed.setTitle(`Definition #${index} of \`${formattedWord}\``)
                     .setColor("#0099ff")
                     .setThumbnail(message.author.displayAvatarURL())
                     .addField("Part of Speech", `${data.results[index-1]["partOfSpeech"]}`, true)
-                    
+                
                     if(data.results[index-1]["derivation"]) {
                         embed.addField("Derivatives", `${data.results[index-1]["derivation"]}`, true)
                     }
-
                     if(data.results[index-1]["synonyms"]) {
                         embed.addField("Synonyms", `${data.results[index-1]["synonyms"]}`, true)
                     }
-
                     if(data.results[index-1]["examples"]) {
                         embed.addField("Example", `${data.results[index-1]["examples"]}`, true)
                     }
-
                     embed.addField("Definition", `${data.results[index-1]["definition"]}`, false)
                     .setDescription(`You can go to the next defintion using \`define ${word} ${index+1}\``)
 

@@ -10,6 +10,6 @@ export default class Ready extends Listener {
     }
 
     public exec(): void {
-        console.log(`STARTED\nLogged in as:\n${this.client.user.tag }:${this.client.user.id}\nStatus: ONLINE`)
+        console.log(`\nSTARTED\nLogged in as:\n${this.client.user.tag }:${this.client.user.id}\n\nStatus: ONLINE\n`)
     }
 }

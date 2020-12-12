@@ -1,6 +1,8 @@
+# folders
 node_modules
-dist
+dist/*
 /.vscode
 
-package-lock.json
-package.json
+# files
+yarn.lock
+/test

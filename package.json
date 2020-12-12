@@ -1,0 +1,21 @@
+{
+  "name": "homework-helper",
+  "author": "aiden-dev (https://aiden-dev.github.io/)",
+  "version": "0.1.2",
+  "main": "dist/Bot.js",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon dist/Bot.js",
+    "start": "node dist/Bot.js"
+  },
+  "dependencies": {
+    "common-tags": "^1.8.0",
+    "discord-akairo": "^8.1.0",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "jimp": "^0.16.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.13"
+  }
+}

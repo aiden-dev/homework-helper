@@ -20,16 +20,15 @@ export default class Help extends Command {
                     id: "command",
                     type: "commandAlias",
                     default: null
-                }
-            ]
-        })
-    }
+                }]})}
 
     public exec(message: Message, { command }: { command: Command }): Promise<Message> {
         if (command) {
             return message.channel.send(new MessageEmbed()
                 .setAuthor(`Help | ${command}`, this.client.user.displayAvatarURL())
                 .setColor("#0099ff")
+                .setTimestamp()
+                .setFooter(message.author.tag)
                 .setDescription(stripIndents`
                     **Description:**
                     ${command.description.content || "No description."}
@@ -42,9 +41,10 @@ export default class Help extends Command {
         }
 
         const embed = new MessageEmbed()
-        .setAuthor(`Help | ${this.client.user.username}`, this.client.user.displayAvatarURL())
-        .setColor("#0099ff")
-        .setFooter(`@Homework Helper help {command} for more information on a command.`)
+            .setAuthor(`Help | ${this.client.user.username}`, this.client.user.displayAvatarURL())
+            .setColor("#0099ff")
+            .setFooter(`help {command} for more info. | ${message.author.tag}`)
+            .setTimestamp()
 
         for (const category of this.handler.categories.values()) {
             if (["default"].includes(category.id)) continue;
@@ -58,5 +58,4 @@ export default class Help extends Command {
 
         return message.channel.send(embed);
     }
-
 }
