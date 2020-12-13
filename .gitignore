@@ -1,8 +1,0 @@
-# folders
-node_modules
-dist/*
-/.vscode
-
-# files
-yarn.lock
-/test

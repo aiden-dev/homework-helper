@@ -2,11 +2,11 @@
   "name": "homework-helper",
   "author": "aiden-dev (https://aiden-dev.github.io/)",
   "version": "0.1.2",
-  "main": "dist/Bot.js",
+  "main": "Bot.js",
   "private": true,
   "scripts": {
-    "dev": "nodemon dist/Bot.js",
-    "start": "node dist/Bot.js"
+    "dev": "nodemon Bot.js",
+    "start": "node Bot.js"
   },
   "dependencies": {
     "common-tags": "^1.8.0",

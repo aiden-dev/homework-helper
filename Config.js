@@ -1,0 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.owners = exports.prefix = void 0;
+exports.prefix = "@Homework Helper ";
+exports.owners = ["382647431885488139"];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vc3JjL0NvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBVyxRQUFBLE1BQU0sR0FBVyxtQkFBbUIsQ0FBQztBQUNyQyxRQUFBLE1BQU0sR0FBYSxDQUFDLG9CQUFvQixDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgbGV0IHByZWZpeDogc3RyaW5nID0gXCJASG9tZXdvcmsgSGVscGVyIFwiO1xyXG5leHBvcnQgbGV0IG93bmVyczogc3RyaW5nW10gPSBbXCIzODI2NDc0MzE4ODU0ODgxMzlcIl07Il19
